@@ -40,6 +40,11 @@
     width: 80%;
 }
 
+.date_post {
+    text-decoration: underline;
+    font-style: italic;
+}
+
 .short_text {
     padding: 3%;
 }
