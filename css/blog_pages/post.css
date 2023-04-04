@@ -1,0 +1,54 @@
+@import url(../template.css);
+@import url(../header.css);
+@import url(../footer.css);
+
+.post {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post_details {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: grey solid thin;
+    padding: 2%;
+    margin: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post_details > h2, figure {
+    text-align: center;
+}
+
+.post_details>p {
+    font-size: 1.5rem;
+}
+
+.img_content {
+    width: 80%;
+}
+
+.postname {
+    font-weight: bold;
+    color: #006A4E;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.other_posts > a {
+    text-decoration: none;
+    margin: 2px;
+}
+
+@media(max-width: 599px) {
+    .post_details {
+        width: 98%;
+        padding: 5%;
+    }
+}

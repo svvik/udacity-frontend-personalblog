@@ -1,0 +1,113 @@
+.bottom {
+    display: flex;
+    flex-direction: column;
+    grid-area: bm;
+    margin-top: 2%;
+}
+
+.subs {
+    width: 50%;
+}
+
+.leg_n {
+    color: #006A4E;
+    font-weight: bold;
+}
+
+.in_sub {
+    margin-right: 12px;
+}
+
+.submit_b {
+    background-color: #006A4E;
+    color: white;
+}
+
+.find_me {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "ci ms";
+}
+
+.con_in {
+    display: flex;
+    justify-content: flex-start;
+    grid-area: ci;
+}
+
+.my_info {
+    font-weight: bold;
+}
+
+.my_so {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: ms;
+}
+
+.logo {
+    max-width: 2%;
+    max-height: 2%;
+    min-height: 17px;
+    min-width: 17px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #006A4E;
+    color: white;
+}
+
+@media(max-width: 400px) {
+    .find_me {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "ci ci"
+            "ms ms";
+    }
+
+    .subs {
+        width: 100%;
+    }
+
+    .in_sub {
+        margin-bottom: 5px;
+    }
+
+    .my_so {
+        justify-content: flex-start;
+    }
+}
+
+@media(min-width: 401px) and (max-width: 599px) {
+    .find_me {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "ci ci"
+            "ms ms";
+    }
+
+    .subs {
+        width: 100%;
+    }
+
+    .in_sub {
+        margin-bottom: 5px;
+    }
+
+    .my_so {
+        justify-content: flex-start;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 900px) {
+    .find_me {
+        grid-template-columns: 60% 40%;
+    }
+
+    .subs {
+        width: 100%;
+    }
+}

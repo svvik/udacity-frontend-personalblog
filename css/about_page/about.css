@@ -1,0 +1,48 @@
+@import url(../template.css);
+@import url(../header.css);
+@import url(../footer.css);
+
+.about_block {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about_me {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: grey solid thin;
+    padding: 2%;
+    margin: 3%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img_content {
+    width: 80%;
+}
+
+.intro {
+    font-weight: bold;
+    color: #006A4E;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.welcome {
+    font-size: 1.5rem;
+    margin-bottom: -4%;
+}
+
+.text {
+    padding: 3%;
+    font-size: 1.25rem;
+}
+
+@media(max-width: 599px) {
+    .about_me {
+        width: 98%;
+        padding: 5%;
+    }
+}

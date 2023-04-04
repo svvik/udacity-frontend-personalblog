@@ -1,0 +1,65 @@
+@import url(template.css);
+@import url(header.css);
+@import url(footer.css);
+
+.quote {
+    display: flex;
+    justify-content: center;
+}
+
+.citation {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.auth_citation {
+    display: flex;
+    justify-content: center;
+}
+
+.blog_cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: block;
+    width: 22%;
+    border-radius: 0.5rem;
+    border: grey solid thin;
+    padding: 2%;
+    margin: 3%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img_c {
+    width: 80%;
+}
+
+.short_text {
+    padding: 3%;
+}
+
+@media(max-width: 400px) {
+    .card{
+        width: 98%;
+        padding: 5%;
+    }
+}
+
+@media(min-width: 401px) and (max-width: 599px) {
+    .card {
+        width: 98%;
+        padding: 5%;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 900px) {
+    .card {
+        width: 38%;
+    }
+}
